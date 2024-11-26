@@ -1,0 +1,18 @@
+-- functions
+    -- built in functions
+    -- user defined functions
+        -- function statement (declaration)
+        -- function expression
+        -- callback function
+
+-- How JS Works // done
+-- Hoisting // done
+-- Array // done
+-------------------------------------------
+== Math Object
+-------------------------------------------
+
+
+
+/**=============== */
+// var trackName = "PHP";

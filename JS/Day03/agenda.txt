@@ -1,0 +1,49 @@
+-- Object 
+-- access Object Data
+-- Dom Object -- Dom Tree
+-- How To select Element From Dom
+/**================== DOM =================
+ * Document Object Model
+ * -------------------------------------------
+ * == how to select Element From Dom
+ * --------------------------------------------
+ * == getElementById ==> Element || null
+ * == querySelector ==> Element || null
+ * == getElementsByClassName ==> collection
+ * == getElementsByTagName ==> collection
+ * == getElementsByName ==> collection
+ * == querySelectorAll ==> nodeList
+ *---------------------Props-----------------------
+ == document.body
+ == document.images
+ == document.images
+ == document.links
+ == document.forms
+ == parent.firstElementChild
+ == parent.lastElementChild
+ == parent.children
+ * =========================================== */
+-- How To change Content From Dom
+ * Change Content in dom
+ * ------------------------------
+ * == innerText
+ * == innerHTML
+ * == textContent -- search
+ * -----------------input-----------------
+ * === value
+ * === checked
+ ------------------------------------------------
+-- how to change Style 
+/** Change Style
+ * --------------------------------
+ * == style -- Done
+ * == className -- Done
+ * == classList
+ *  -- add
+ *  -- remove
+ *  -- toggle
+ * --------------------------------
+ */
+-- Events 
+    -- add attribute
+-------------------------------------------

@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+div {
+	background-color: #eee;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+p {
+	background-color: #ccc;
+	padding: 1em;
+	margin: 1em;
+}
+
+button {
+	width: 170px;
+	display: block;
+	padding: 0.5em;
+	border: transparent;
+	border-radius: 0.25em;
+	margin: 1em 2em;
+	cursor: pointer;
+	font-weight: bold;
+}
+button:hover {
+	background-color: orange;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+
+input[type="text"] {
+	display: block;
+	width: 190px;
+	padding: 0.5em;
+	border-radius: 0.25em;
+	outline: 0;
+	border: transparent;
+}
+.show {
+	display: inline-block;
+	margin-top: 0.5em;
+	color: blueviolet;
+	font-weight: bold;
+}
+
+.info {
+	letter-spacing: 2px;
+}
+
+.compData {
+	border-radius: 0.5em;
+}
+
+.jsClass {
+	background-color: #2f385a;
+	padding: 1em;
+	color: #fff;
+}

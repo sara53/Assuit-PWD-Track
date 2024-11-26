@@ -1,0 +1,60 @@
+// JS Book --> You don't know JS
+
+== JS History 
+== where js code is written
+== Datatypes
+    -- primitve Datatypes
+    -- reference Datatypes
+
+== Operators
+== Falsy Values
+== control Flow
+== Communication with user
+== regex in javascript self study
+--------------------------------------
+/** Operators
+ * [+,-,*,/]
+ * ------------------------------------------------
+ * [+]
+ *      ==> number + number --> add
+ *      ==> string + string --> concat
+ *
+ *
+ * [-]
+ *   == number - number --> sub
+ *
+ * == coercion --> js engine convert automatically from datatype to anther datatypes
+ */
+== String Object
+/** Datatypes
+ * ---------------------------
+ * == Primitive Datatypes
+ * ---string
+ * --- number
+ * --- boolean
+ * --- undefined
+ * --- null
+ * ===========================
+ * == Reference Datatypes
+ *  --- Object
+ */
+
+/**
+ * length
+ * ----------------------
+ * == concat
+ * ==charAt --> index --> char
+ * == indexOf --> char --> index
+ * == lastIndexOf --> char --> index
+ * == split
+ * == toUpperCase
+ * == toLowerCase
+ * == startsWith
+ * == endsWith
+ * == includes
+ * == trim
+ * == trimStart
+ * == trimEnd
+ * == slice -- Splice -- substring
+ */
+ 
