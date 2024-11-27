@@ -118,10 +118,11 @@
 // 	// span.innerHTML = input1.value;
 // }
 
-var p = document.getElementById("head");
+// var p = document.getElementById("head");
 
 function execute() {
-	p.classList.toggle("jsClass");
+	console.log("Welcome");
+	// p.classList.toggle("jsClass");
 }
 // function execute() {
 // 	// set

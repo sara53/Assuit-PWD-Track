@@ -1,0 +1,23 @@
+-- DOM
+    -- Attributes
+    -- Create Elements From DOM
+
+ * == getAttribute
+ * == setAttribute
+ * == hasAttribute
+ * == removeAttribute
+
+insertAdjacentElement -- search
+
+-- BOM
+    -- window
+    -- screen -- search
+    -- location
+    -- navigator
+    -- history
+
+
+-- Events 
+    -- add Attributes
+    -- attach function on Elements
+    -- addEventListener
