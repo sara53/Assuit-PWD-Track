@@ -211,3 +211,6 @@
 // console.log(location.href);
 // }
 /***********************************************--- */
+// var parent = document.getElementById("parent");
+// console.log(parent.lastChild);
+// console.log(parent.lastElementChild);
