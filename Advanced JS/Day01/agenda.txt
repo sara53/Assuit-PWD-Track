@@ -1,0 +1,6 @@
+== functions execution in memory
+== shdawing
+== local Scope VS Global Scope
+== closure
+
+
