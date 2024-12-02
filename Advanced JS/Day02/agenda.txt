@@ -1,0 +1,4 @@
+-- this
+-- this pattern
+-- call -- bind -- apply
+-- Factory pattern
