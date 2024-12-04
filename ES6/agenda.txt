@@ -1,0 +1,11 @@
+-- var -- let -- const
+-- arrow functions
+-- Spread operator
+-- rest Params
+-- destructuring
+-- String 
+-- Array API
+-- setTimeout execution in memory
+-- Promises
+-- fetch 
+------------------------------------------------------------
