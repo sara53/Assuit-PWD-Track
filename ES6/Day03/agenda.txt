@@ -1,0 +1,12 @@
+-- Object
+    -- Object.keys
+    -- Object.values
+    -- Object.entries
+    -- Object.assign (Search)
+-- Symbol
+-- Generator & Iterator // done
+-- Modules
+-- OOP 
+-- Proxy -- Self Study
+-- project board -- 
+https://miro.com/app/board/uXjVKyCUBcg=/?share_link_id=121571042538
