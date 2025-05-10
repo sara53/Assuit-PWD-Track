@@ -1,0 +1,13 @@
+== installation
+== datatypes
+    -- string
+    -- number
+    -- boolean
+    -- undefined
+    -- null
+    -- any
+== Array
+== Object
+== function
+== OOP
+== set typescript Structure

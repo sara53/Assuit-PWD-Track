@@ -1,0 +1,4 @@
+1- install nodejs (node -v)
+2- npm i -g typescript (tsc -v)
+3- run tsc file (tsc fileName.ts -w)
+-------------------------------------------
