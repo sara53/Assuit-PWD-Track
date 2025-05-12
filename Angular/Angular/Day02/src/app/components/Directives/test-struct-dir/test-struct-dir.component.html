@@ -1,0 +1,80 @@
+<!-- <div class="container p-5 mt-5">
+  <div class="row g-3">
+    <div class="col-md-6" *ngFor="let name of names; let i = index">
+      <div class="border p-3">
+        <h1 class="bg-dark text-light">{{ i + 1 }} : {{ name }}</h1>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non illo rem
+          earum praesentium excepturi dolor! Explicabo minus quaerat dignissimos
+          nostrum ab deserunt, excepturi aut alias fuga, deleniti aliquid, id
+          voluptatem.
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container p-5 mt-5">
+  <h1 class="mb-3">Movies List</h1>
+  <div class="row g-3">
+    @for (movie of movies; track movie.id) {
+
+    <div
+      class="col-md-6"
+      [ngClass]="{
+        'alert alert-success': $even
+      }"
+    >
+      <div class="border p-3">
+        <h1 class="bg-dark text-light">{{ $index }} {{ movie.name }}</h1>
+        <p class="lead">Odd Movie : {{ $odd }}</p>
+        <p class="lead">Even Movie : {{ $even }}</p>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non illo rem
+          earum praesentium excepturi dolor! Explicabo minus quaerat dignissimos
+          nostrum ab deserunt, excepturi aut alias fuga, deleniti aliquid, id
+          voluptatem.
+        </p>
+        <button class="btn btn-danger">Remove Move</button>
+      </div>
+    </div>
+
+    }@empty {
+    <p class="alert alert-warning p-5 mt-4">No Movies to show</p>
+    }
+  </div>
+</div> -->
+<div class="container p-5 mt-5">
+  <h1 class="mb-3">Movies List</h1>
+  <!-- 
+  @if (flag && color == 'red') {
+  <p class="alert alert-success p-3 rounded">Welcome Pd Track</p>
+
+  }@else {
+  <p class="alert alert-danger">Process Phase</p>
+  } -->
+  <!-- @if (color == 'green') {
+  <p class="alert alert-success p-3 rounded">Welcome Pd Track</p>
+
+  }@else if(color == 'red') {
+  <p class="alert alert-danger">Red Phase</p>
+  }@else {
+  <p class="alert alert-dark">Process Phase</p>
+
+  } -->
+
+  <!-- <p *ngIf="flag" class="alert alert-success">Hello IF</p> -->
+  <!-- 
+  @switch (color) { @case ('red') {
+  <p class="bg-danger p-3">Red Color</p>
+  } @case ('green') {
+  <p class="bg-success p-3">green Color</p>
+
+  } @case ('blue') {
+  <p class="bg-primary p-3">blue Color</p>
+
+  } @default {
+  <p class="bg-dark text-light p-3">No Color Chosen</p>
+
+  } } -->
+  <button (click)="toggle()" class="btn btn-dark mt-5">Toggle</button>
+</div>
