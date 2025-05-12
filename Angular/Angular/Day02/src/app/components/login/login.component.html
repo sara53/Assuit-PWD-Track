@@ -1,0 +1,32 @@
+<!-- <div class="container mt-5 p-5">
+  <h1>Student Form</h1>
+  <input
+    type="text"
+    class="form-control my-3"
+    placeholder="Enter Student Name"
+    name="studentName"
+    [(ngModel)]="student.name"
+  />
+  <input
+    type="text"
+    class="form-control my-3"
+    placeholder="Enter Student Age"
+    name="studentAge"
+    [(ngModel)]="student.age"
+  />
+  <button (click)="saveStudentData()" class="btn btn-dark">
+    Save Student Data
+  </button>
+</div> -->
+<div class="container mt-5 p-5">
+  <h1 #myH1>Student Form</h1>
+
+  <input
+    #myInput
+    (input)="getInputData(myInput.value)"
+    type="text"
+    placeholder="Enter Data"
+    class="form-control my-4"
+  />
+  <button class="btn btn-dark" (click)="execute(myH1)">execute</button>
+</div>

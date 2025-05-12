@@ -1,0 +1,24 @@
+<!-- <div class="container mt-5 p-5 rounded border">
+  <h2>Two Way Binding</h2>
+  <input
+    (input)="getInputValue($event)"
+    type="text"
+    class="form-control mt-3"
+    placeholder="Enter Your Data"
+  />
+
+  <p class="lead mt-2">{{ data }}</p>
+  <button class="btn btn-success mt-4" (click)="show($event)">Click</button>
+</div> -->
+<div class="container mt-5 p-5 rounded border">
+  <h2>Two Way Binding</h2>
+  <input
+    type="text"
+    class="form-control mt-3"
+    name="x"
+    placeholder="Enter Your Data"
+    [(ngModel)]="trackName"
+  />
+
+  <p class="lead mt-2">{{ trackName }}</p>
+</div>
