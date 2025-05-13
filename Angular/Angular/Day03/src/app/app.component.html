@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Organization : {{ organizationName }}</h1>
+
+  <app-login (myEvent)="getData($event)" />
+</div>
+<!-- <div class="container">
+  <h1>{{ trackName }}</h1>
+  <app-content [ourTrackName]="trackName" />
+</div> -->
+<!-- <div class="container">
+  <p class="lead mt-4 fs-3">
+    Organization Name At APP Component : {{ organizationName }} {{ count }}
+  </p>
+  <app-products (onAddProductToLogin)="addProductToApp($event)" />
+  <app-login (myEvent)="getData($event)" [count]="count" />
+</div> -->

@@ -1,0 +1,58 @@
+<!-- <div class="container p-5 mt-5">
+  <h1>Attribute Directives {{ flag }}</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="border p-5 mt-4 lead" [class.customBG]="flag">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+        inventore accusantium ex magnam quod molestiae quis sapiente reiciendis
+        adipisci blanditiis, debitis libero soluta similique nisi impedit est
+        vitae iste sequi.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <p
+        class="border p-5 mt-4 lead"
+        [ngClass]="{ customBG: flag, 'bg-danger': !flag }"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+        inventore accusantium ex magnam quod molestiae quis sapiente reiciendis
+        adipisci blanditiis, debitis libero soluta similique nisi impedit est
+        vitae iste sequi.
+      </p>
+    </div>
+  </div>
+  <button (click)="toggle()" class="btn btn-dark">Toggle</button>
+</div> -->
+<div class="container p-5 mt-5">
+  <h1>Attribute Directives {{ flag }}</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <p
+        class="border p-5 mt-4 lead fw-bold"
+        [style.color]="flag ? 'red' : 'green'"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+        inventore accusantium ex magnam quod molestiae quis sapiente reiciendis
+        adipisci blanditiis, debitis libero soluta similique nisi impedit est
+        vitae iste sequi.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <p
+        class="border p-5 mt-4 lead fw-bold"
+        [ngStyle]="{
+          color: name == 'ali' ? 'red' : 'green',
+          backgroundColor: flag ? '#000' : '#ddd'
+        }"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+        inventore accusantium ex magnam quod molestiae quis sapiente reiciendis
+        adipisci blanditiis, debitis libero soluta similique nisi impedit est
+        vitae iste sequi.
+      </p>
+    </div>
+  </div>
+  <button (click)="toggle()" class="btn btn-dark">Toggle</button>
+</div>
+
+<!-- ngClass ngStyle import module common Module -->

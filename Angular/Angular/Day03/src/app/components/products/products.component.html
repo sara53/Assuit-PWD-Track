@@ -1,0 +1,7 @@
+<div class="bg-light p-5 rouned">
+  <h1 class="text-muted">Products Component</h1>
+  <p class="lead fs-3">
+    Number of Products : <strong class="text-danger">{{ count }}</strong>
+  </p>
+  <app-product-details (onAddProduct)="getProductCount($event)" />
+</div>
