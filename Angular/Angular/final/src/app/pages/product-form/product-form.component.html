@@ -1,6 +1,8 @@
 <div class="container mt-5">
-  <h1 class="mb-3">Add New Product</h1>
-  <form>
+  <h1 class="mb-1">
+    {{ productId == 0 ? "Add Product" : "Edit Product" }}
+  </h1>
+  <form [formGroup]="productForm" (submit)="productOperation()">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Product Name</label>
       <input
@@ -9,10 +11,17 @@
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="Enter Product Name"
+        formControlName="name"
       />
-      <div id="emailHelp" class="form-text">
-        We'll never share your email with anyone else.
+      @if (getName.touched) { @if (getName.hasError('required')) {
+      <div id="emailHelp" class="form-text text-danger">
+        Product Name Is Required
       </div>
+      } @if (getName.hasError('minlength')) {
+      <div id="emailHelp" class="form-text text-danger">
+        Product Name length must be greater than 3
+      </div>
+      } }
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label"
@@ -23,7 +32,11 @@
         class="form-control"
         id="exampleInputPassword1"
         placeholder="Enter Product Price"
+        formControlName="price"
       />
+      @if (getPrice.touched) { @if (getPrice.hasError('required')) {
+      <div id="emailHelp" class="form-text text-danger">Price is required</div>
+      } }
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword3" class="form-label"
@@ -33,10 +46,19 @@
         type="text"
         class="form-control"
         id="exampleInputPassword3"
+        formControlName="quantity"
         placeholder="Enter Product Quantity"
       />
+      @if (getQuantity.touched) { @if (getQuantity.hasError('required')) {
+      <div id="emailHelp" class="form-text text-danger">
+        Quantity is required
+      </div>
+      } }
     </div>
+    <p class="lead">{{ productForm.value | json }}</p>
 
-    <button type="submit" class="btn btn-dark">add New Product</button>
+    <button type="submit" class="btn btn-dark">
+      {{ productId == 0 ? "Add Product" : "Edit Product" }}
+    </button>
   </form>
 </div>

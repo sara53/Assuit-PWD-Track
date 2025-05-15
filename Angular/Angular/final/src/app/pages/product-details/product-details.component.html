@@ -3,9 +3,9 @@
     <h3 class="text-warning text-center mb-5">
       Product details {{ productId }}
     </h3>
-    <p class="alert alert-warning">{{ product | json }}</p>
+
     <p class="lead">Product Name : {{ product?.name }}</p>
-    <p class="lead">Product Price :{{ product?.price }}</p>
+    <p class="lead">Product Price :{{ product?.price | currency }}</p>
     <p class="lead">Product Quantity :{{ product?.quantity }}</p>
 
     <div>

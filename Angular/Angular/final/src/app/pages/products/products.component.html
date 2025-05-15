@@ -1,10 +1,32 @@
 <div class="container p-3">
   <h2 class="text-muted text-center mb-3">Our Products</h2>
-  <div class="d-flex justify-content-between mt-5">
-    <button class="btn btn-outline-dark" [routerLink]="['/products/0/edit']">
-      Add Product
-    </button>
-    <input type="text" class="form-control w-25" placeholder="Search ...." />
+  <div class="row">
+    <div class="col-md-3">
+      <button
+        class="btn btn-outline-dark flex-1"
+        [routerLink]="['/products/0/edit']"
+      >
+        Add Product
+      </button>
+    </div>
+    <div class="col-md-8 d-flex justify-content-between align-items-center">
+      <input
+        type="text"
+        name="productSize"
+        class="form-control w-25"
+        placeholder="Size "
+        [(ngModel)]="size"
+      />
+
+      <input
+        type="text"
+        name="productCategory"
+        class="form-control w-25"
+        placeholder="Category "
+        [(ngModel)]="category"
+      />
+      <button class="btn btn-success" (click)="filterBy()">Filter By</button>
+    </div>
   </div>
   <table class="table mt-4">
     <thead>
@@ -33,7 +55,10 @@
             class="text-warning mx-1 fs-4 bi bi-eye-fill"
             [routerLink]="['/products', product.id]"
           ></i>
-          <i class="text-danger mx-1 fs-4 bi bi-trash3-fill"></i>
+          <i
+            (click)="deleteHandler(product.id)"
+            class="text-danger mx-1 fs-4 bi bi-trash3-fill"
+          ></i>
         </td>
       </tr>
       }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { StaticProductService } from '../../services/static-product.service';
 import { CommonModule } from '@angular/common';
+import { DynamicProductService } from '../../services/dynamic-product.service';
 
 @Component({
   selector: 'app-product-details',
@@ -16,12 +17,14 @@ export class ProductDetailsComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: StaticProductService
+    private productService: DynamicProductService
   ) {}
   ngOnInit(): void {
     this.productId = this.activatedRoute.snapshot.paramMap.get('id');
-    this.product = this.productService.getProductById(this.productId);
-    // console.log(this.activatedRoute.snapshot.params['id']); // old versions
-    // console.log(); // better --
+    this.productService.getProductById(this.productId).subscribe({
+      next: (response) => {
+        this.product = response;
+      },
+    });
   }
 }
